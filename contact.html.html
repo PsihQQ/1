@@ -3,7 +3,6 @@
 <head>
     <title>Site Web Simplu</title>
     <style>
-        /* Stilizare pentru meniu */
         ul {
             list-style-type: none;
             margin: 0;
@@ -22,19 +21,19 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-       border: 1px solid #ddd; /* Add a border */
-            border-radius: 5px; /* Add rounded corners */
-            transition: all 0.3s; /* Add transition effect */
+       border: 1px solid #ddd; 
+            border-radius: 5px; 
+            transition: all 0.3s; 
         }
 
         li a:hover {
             background-color: #ddd;
-            color: #333; /* Change text color on hover */
-            transform: translateY(-3px); /* Add 3D effect on hover */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+            color: #333; 
+            transform: translateY(-3px); 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
         }
 
-        /* CSS for color switcher buttons */
+
         #colorSwitcherContainer {
             position: fixed;
             bottom: 10px;
@@ -51,7 +50,6 @@
             transition: background-color 0.3s;
         }
 
-        /* Gradient background colors for color buttons */
         .red {
             background: linear-gradient(to bottom, #FF5733, #FF0000);
         }
@@ -64,20 +62,16 @@
             background: linear-gradient(to bottom, #33FF33, #00FF00);
         }
 
-        /* CSS for changing text color */
         .bw-text {
-            color: #000; /* Black text color */
+            color: #000; 
         }
 
-        /* Logo styling */
         #logo {
             display: block;
             margin: 20px auto;
             max-width: 200px;
-            border-radius: 50%; /* Make the avatar image round */
+            border-radius: 50%; 
         }
-
-        /* Additional text styling */
         #learnCodingText {
             text-align: center;
             padding: 20px;
@@ -87,35 +81,24 @@
     </style>
 </head>
 <body>
-    <!-- Logo (your avatar) -->
     <img id="logo" src="your_avatar.jpg" alt="Your Avatar">
 
-    <!-- Color switcher buttons -->
     <div id="colorSwitcherContainer">
         <span class="colorButton red" onclick="changeBackgroundColor('red')">Red</span>
         <span class="colorButton blue" onclick="changeBackgroundColor('blue')">Blue</span>
         <span class="colorButton green" onclick="changeBackgroundColor('green')">Green</span>
         <span class="colorButton white" onclick="changeBackgroundColor('white')">White</span>
     </div>
-
-    <!-- JavaScript for color switcher -->
     <script>
         const body = document.body;
-
-        // Function to change the background color
         function changeBackgroundColor(color) {
             body.style.backgroundColor = color;
         }
     </script>
-
-    <!-- Meniu de navigare -->
     <ul>
         <li><a href="index.html">Acasă</a></li>
         <li><a href="contact.html">Date de contact</a></li>
     </ul>
-
-   
-    <!-- Pagina "Date de contact" -->
     <div style="padding: 20px;">
         <h1>Date de contact</h1>
         <table border="1">
@@ -133,7 +116,6 @@
             </tr>
         </table>
     </div>
-  <!-- Additional text about learning coding -->
     <div id="learnCodingText">
         <p>Învață programare cu ușurință și pasiune! Programarea poate fi o experiență fascinantă și creativă care îți deschide uși spre lumea tehnologiei.</p>
     </div>
